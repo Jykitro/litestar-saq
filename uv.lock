@@ -716,7 +716,7 @@ wheels = [
 
 [[package]]
 name = "litestar"
-version = "2.16.0"
+version = "2.18.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -734,9 +734,9 @@ dependencies = [
     { name = "rich-click" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0d/4e/3376d5737a4c2e26fb2991a046265c38335b134d3e04e93c6d754e962e4e/litestar-2.16.0.tar.gz", hash = "sha256:f65c0d543bfec12b7433dff624322936f30bbdfb54ad3c5b7ef22ab2d092be2d", size = 399637, upload-time = "2025-05-04T11:00:46.654Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c9/75/e0c286719860bc63459dd3364616bb436aecfbd8ab26f212a3a7957a551f/litestar-2.18.0.tar.gz", hash = "sha256:be8f91813854722b7a2f37cbb57d76977050a96b2427d3c4455d406f0f4fcd50", size = 372890, upload-time = "2025-10-05T16:24:00.094Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/9a/dc/4d1018577683918cd24a58228c90833f71f792aafcfffb44905c9062f737/litestar-2.16.0-py3-none-any.whl", hash = "sha256:8a48557198556f01d3d70da3859a471aa56595a4a344362d9529ed65804e3ee4", size = 573158, upload-time = "2025-05-04T11:00:44.558Z" },
+    { url = "https://files.pythonhosted.org/packages/3f/ec/76d3e07db8bac2f3248acb8879c7a8ba6b6c96e846c40d8474d1a0f79160/litestar-2.18.0-py3-none-any.whl", hash = "sha256:459ec993bafe47245c981d802a0a0c73f47c98313b3c4e47923eebe978f0e511", size = 564603, upload-time = "2025-10-05T16:23:58.439Z" },
 ]
 
 [package.optional-dependencies]
@@ -835,9 +835,9 @@ test = [
 [package.metadata]
 requires-dist = [
     { name = "hiredis", marker = "extra == 'hiredis'" },
-    { name = "litestar", specifier = ">=2.0.1" },
+    { name = "litestar", specifier = ">=2.18.0" },
     { name = "psycopg", extras = ["pool", "binary"], marker = "extra == 'psycopg'" },
-    { name = "saq", specifier = ">=0.24.4" },
+    { name = "saq", specifier = ">=0.26.0" },
 ]
 provides-extras = ["hiredis", "psycopg"]
 
@@ -1754,14 +1754,14 @@ wheels = [
 
 [[package]]
 name = "redis"
-version = "6.0.0"
+version = "5.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "async-timeout", marker = "python_full_version < '3.11.3'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/79/12/dffaaa4374b8d5f3b7ff5c40025c9db387e06264302d5a9da6043cd84e1f/redis-6.0.0.tar.gz", hash = "sha256:5446780d2425b787ed89c91ddbfa1be6d32370a636c8fdb687f11b1c26c1fa88", size = 4620969, upload-time = "2025-04-30T19:09:30.798Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/47/da/d283a37303a995cd36f8b92db85135153dc4f7a8e4441aa827721b442cfb/redis-5.2.1.tar.gz", hash = "sha256:16f2e22dff21d5125e8481515e386711a34cbec50f0e44413dd7d9c060a54e0f", size = 4608355, upload-time = "2024-12-06T09:50:41.956Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/08/c8/68081c9d3531f7b2a4d663326b96a9dcbc2aef47df3c6b5c38dea90dff02/redis-6.0.0-py3-none-any.whl", hash = "sha256:a2e040aee2cdd947be1fa3a32e35a956cd839cc4c1dbbe4b2cdee5b9623fd27c", size = 268950, upload-time = "2025-04-30T19:09:28.432Z" },
+    { url = "https://files.pythonhosted.org/packages/3c/5f/fa26b9b2672cbe30e07d9a5bdf39cf16e3b80b42916757c5f92bca88e4ba/redis-5.2.1-py3-none-any.whl", hash = "sha256:ee7e1056b9aea0f04c6c2ed59452947f34c4940ee025f5dd83e6a6418b6989e4", size = 261502, upload-time = "2024-12-06T09:50:39.656Z" },
 ]
 
 [package.optional-dependencies]
@@ -1839,14 +1839,14 @@ wheels = [
 
 [[package]]
 name = "saq"
-version = "0.24.4"
+version = "0.26.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "croniter" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/72/7b/8cf4ae95cb601155453bbcbea2b9eb1dd567a7a9507d1e88bf1e90bc28cc/saq-0.24.4.tar.gz", hash = "sha256:9ad8a0a0a3317d68525adc443aedf85d9e9da90bbb1e76b71b2341dc59ac66b2", size = 57980, upload-time = "2025-05-01T06:30:22.611Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7e/a1/772f9d4b56f0bfef691005a4f1fe5aac18973dfa339efe8a3e0d260867d6/saq-0.26.0.tar.gz", hash = "sha256:2b4cceda3f8f39d0acd10c46d0e12c8f2f7b1e38ae1eab6260abde45ee7f7af2", size = 59568, upload-time = "2025-10-14T02:35:01.059Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6b/5d/996bb72c8abd881e510005bb409f264f62fc83dba672fa4c8a7ca0c50122/saq-0.24.4-py3-none-any.whl", hash = "sha256:96022d4d3042d325151515685ddd83efb784e41b023d3303ae410ec454e1302a", size = 60935, upload-time = "2025-05-01T06:30:21.417Z" },
+    { url = "https://files.pythonhosted.org/packages/ee/18/42ac00417607c6cea8b5231c7556c52d62cf43b868c17405bf768407266d/saq-0.26.0-py3-none-any.whl", hash = "sha256:3d8bb499dc59c6f0e942f98a7c1bab86571d07f2898b544ea35c7d24c877f067", size = 62810, upload-time = "2025-10-14T02:34:58.605Z" },
 ]
 
 [[package]]
