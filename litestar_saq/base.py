@@ -63,6 +63,13 @@ class Worker(SaqWorker):
         separate_process: bool = True,
         multiprocessing_mode: Literal["multiprocessing", "threading"] = "multiprocessing",
     ) -> None:
+
+        try:
+            asyncio.get_running_loop()
+        except RuntimeError:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+        # -------------------------------------------------
         self.separate_process = separate_process
         self.multiprocessing_mode = multiprocessing_mode
         super().__init__(
@@ -91,7 +98,7 @@ class Worker(SaqWorker):
             self._saq_asyncio_tasks = loop.create_task(self.start())
 
     async def on_app_shutdown(self) -> None:
-        """Attach the worker to the running event loop."""
+        """Detach the worker cleanly on shutdown."""
         if not self.separate_process:
             loop = asyncio.get_running_loop()
             self._saq_asyncio_tasks = loop.create_task(self.stop())
